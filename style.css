@@ -1,0 +1,718 @@
+body {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    font-family: Inter;
+}
+
+
+.accessibility {
+    display: flex;
+    justify-content: flex-end;
+}
+.access {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #01a44d;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+}
+.access img {
+    margin-right: 5px;
+}
+.access span {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accessibility :hover {
+    background-color: #01a44d;
+    filter: brightness(1.1);
+}
+
+
+.header {
+    background: #213e87;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo-container {
+    padding-left: 2rem;
+}
+
+.logo-container span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 160px;
+    color: white;
+    font-size: 2rem;
+    /* = 32px on base size */
+    font-weight: bold;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    max-width: 100%;
+    margin: 0 50px;
+}
+
+.header-menu ul, a {
+    list-style: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
+.header-menu li,
+#home,
+#lessons,
+#play,
+#progress,
+#help {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #01a44d;
+    width: 115px;
+    height: 54px;
+    border-radius: 20px;
+}
+
+.content {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 546px;
+    height: 371px;
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Shared label and description styles */
+.subject-label {
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.subject-desc {
+    font-size: 20px;
+    color: #000;
+    margin-top: 10px;
+}
+
+/* Color themes per subject */
+.card.read {
+    border: 2px solid #01a44d;
+    color: #01a44d;
+}
+
+.card.math {
+    border: 2px solid #e02182;
+    color: #e02182;
+}
+
+.card.science {
+    border: 2px solid #213e87;
+    color: #213e87;
+}
+
+.card.art {
+    border: 2px solid #ffb800;
+    color: #ffb800;
+}
+
+/* Optional image sizing */
+.card img {
+    max-height: 120px;
+    object-fit: contain;
+}
+
+
+
+.activity {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.activity-cont {
+    background-color: #ffffff;
+    border: 2px solid #213e87;
+    border-radius: 20px;
+    width: 1290px;
+    height: 371px;
+    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: flex-start;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.activity-inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.activity-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #213e87;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0 80px 40px;
+}
+
+.activity-title img {
+    width: 30px;
+    height: 30px;
+}
+
+.activity-boxes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* For responsiveness */
+}
+
+.activity-card {
+    width: 267px;
+    height: 135px;
+    border-radius: 15px;
+    background-color: rgba(217, 217, 217, 0.23);
+    border: 2px solid rgba(111, 111, 111, 0.32);
+    display: flex;
+    flex-direction: column;
+    /* Stack content vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.activity-card h1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 4px 0;
+}
+
+.activity-time {
+    opacity: 0.6;
+    font-size: 0.9em;
+}
+
+.activity-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 8px;
+}
+
+.footer {
+    background-color: #213e87;
+    height: 100px;
+    padding: 15px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer span {
+    color: white;
+    line-height: 1.5;
+    position: relative;
+    top: 35px;
+}
+
+.edu {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.support {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    position: relative;
+    bottom: 35px;
+}
+
+.footer ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    color: white;
+}
+
+.footer ul li img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer ul li p {
+    margin: 0;
+}
+
+.parent-portal {
+    background-color: #2ecc71;
+    /* Green */
+}
+
+.emergency-help {
+    background-color: #e02182;
+    /* Pink */
+}
+
+.footer ul li:hover {
+    filter: brightness(0.9);
+}
+
+
+
+
+
+
+@media (max-width: 580px) {
+    .header-menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .header-menu ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+
+
+    .access {
+        max-width: 70px;
+        max-height: 50px;
+    }
+    .access span {
+        font-size: 10px;
+    }
+    .access img{
+        width: 13px;
+        height: 15px;
+    }
+
+
+    .logo-container{
+        padding-left: .2rem;
+    }
+    .logo-container img {
+        max-width: 40px;
+        max-height: 40px;
+    }
+    .logo-container span {
+        max-width: 90px;
+        font-size: 1.125rem;
+    }
+
+
+    .content {
+        padding: 20px;
+        gap: 10px;
+    }
+    .card {
+        width: 150px;
+        height: 140px;
+    }
+    .card img {
+        width: 40px;
+    }
+    .subject-label {
+        font-size: 13px;
+    }
+    .subject-desc {
+        font-size: 8px;
+    }
+
+    .activity {
+        height: auto;
+        padding: 20px;
+    }
+    .activity-cont {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    .activity-title {
+        font-size: 16px;
+        margin: 10px 0 20px 20px;
+    }
+    .activity-card {
+        width: 150px;
+        height: 130px;
+    }
+    .activity-title img {
+        width: 20px;
+        height: 20px;
+    }
+    .activity-icon {
+        width: 30px;
+        height: 30px;
+    }
+    .activity-card h1 {
+        font-size: 14px;
+    }
+    .activity-time {
+        font-size: 10px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        height: 150px;
+        padding: 10px 20px;
+    }
+    .footer span {
+        font-size: 12px;
+        text-align: start;
+    }
+    .footer ul {
+
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .footer ul li {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    .footer ul li img {
+        width: 20px;
+        height: 20px;
+    }
+    .footer ul li p {
+        display: none;
+    }
+    
+}
+
+
+
+@media (max-width: 960px) {
+    .homea {
+        width: 100px;
+        height: 50px;
+    }
+    .homea span {
+        font-size: 14px;
+    }
+    .homea img {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .access {
+        max-width: 70px;
+        max-height: 50px;
+    }
+    .access span {
+        font-size: 10px;
+    }
+    .access img{
+        width: 13px;
+        height: 15px;
+    }
+
+
+    .logo-container{
+        padding-left: .2rem;
+    }
+    .logo-container img {
+        max-width: 40px;
+        max-height: 40px;
+    }
+    .logo-container span {
+        max-width: 90px;
+        font-size: 1.125rem;
+    }
+
+    .content {
+        padding: 20px;
+        gap: 20px;
+    }
+    .card {
+        width: 300px;
+        height: 250px;
+    }
+    .card img {
+        width: 80px;
+    }
+    .subject-label {
+        font-size: 25px;
+    }
+    .subject-desc {
+        font-size: 15px;
+    }
+
+    .activity {
+        height: auto;
+        padding: 20px;
+    }
+    .activity-cont {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    .activity-title {
+        font-size: 20px;
+        margin: 10px 0 20px 20px;
+    }
+    .activity-card {
+        width: 250px;
+        height: 200px;
+    }
+    .activity-title img {
+        width: 30px;
+        height: 30px;
+    }
+    .activity-icon {
+        width: 35px;
+        height: 35px;
+    }
+    .activity-card h1 {
+        font-size: 18px;
+    }
+    .activity-time {
+        font-size: 13px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        height: auto;
+        padding: 10px 20px;
+    }
+    .footer span {
+        font-size: 12px;
+        text-align: start;
+    }
+    .footer ul {
+
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;  
+    }
+    .footer ul li {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    .footer ul li img {
+        width: 20px;
+        height: 20px;
+    }
+    .footer ul li p {
+        display: none;
+    }
+    
+}
+@media (max-width: 1180px) {
+
+    .header-menu {
+        max-width: 900px;
+    }
+    .header-menu ul {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+@media (max-width: 1315px) {
+
+    .homea {
+        width: 100px;
+        height: 50px;
+    }
+    .homea span {
+        font-size: 14px;
+    }
+    .homea img {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .access {
+        max-width: 70px;
+        max-height: 50px;
+    }
+    .access span {
+        font-size: 10px;
+    }
+    .access img{
+        width: 13px;
+        height: 15px;
+    }
+
+
+    .logo-container{
+        padding-left: .2rem;
+    }
+    .logo-container img {
+        max-width: 40px;
+        max-height: 40px;
+    }
+    .logo-container span {
+        max-width: 90px;
+        font-size: 1.125rem;
+    }
+
+
+    .content {
+        padding: 20px;
+        gap: 20px;
+    }
+    .card {
+        width: 450px;
+        height: 300px;
+    }
+    .card img {
+        width: 80px;
+    }
+    .subject-label {
+        font-size: 25px;
+    }
+    .subject-desc {
+        font-size: 15px;
+    }
+
+    .activity {
+        height: auto;
+        padding: 20px;
+    }
+    .activity-cont {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    .activity-title {
+        font-size: 20px;
+        margin: 10px 0 20px 20px;
+    }
+    .activity-card {
+        width: 250px;
+        height: 200px;
+    }
+    .activity-title img {
+        width: 30px;
+        height: 30px;
+    }
+    .activity-icon {
+        width: 35px;
+        height: 35px;
+    }
+    .activity-card h1 {
+        font-size: 18px;
+    }
+    .activity-time {
+        font-size: 13px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        height: auto;
+        padding: 10px 20px;
+    }
+    .footer span {
+        font-size: 12px;
+        text-align: start;
+    }
+    .footer ul {
+
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;  
+    }
+    .footer ul li {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    .footer ul li img {
+        width: 20px;
+        height: 20px;
+    }
+    .footer ul li p {
+        display: none;
+    }
+    
+}
